@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simon777.customwidgetcollections.MainActivity">
+
+    <com.simon777.customwidgetcollections.widget.LikeButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/iv_like_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/red_ring"/>
+
+        <ImageView
+            android:id="@+id/iv_like_shining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        />
+
+        <com.simon777.customwidgetcollections.widget.SeparationTextView
+            android:id="@+id/tv_amount"
+            android:layout_toEndOf="@id/iv_like"
+            android:layout_alignBottom="@id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+        android:layout_marginLeft="8dp"/>
+
+    </com.simon777.customwidgetcollections.widget.LikeButton>
+
+</RelativeLayout>
